@@ -1,0 +1,15 @@
+.background{
+    border-width: 3px;
+    border-style: solid;
+    border-color:black;
+    width: 400px;
+    height: 620px;
+    margin-left: 350px;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    padding: 8vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+

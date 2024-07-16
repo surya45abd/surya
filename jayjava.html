@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        td,
+        th {
+            padding: 0.4vw;
+            border: 1px solid #444;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #333;
+            width: 70%;
+            overflow: hidden;
+            margin: 100px auto;
+        }
+
+        tr:first-child {
+            background-color: blanchedalmond;
+        }
+
+        td>input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            width: fit-content;
+        }
+
+        td {
+            background-color: #fff;
+        }
+
+        .delbutton {
+            cursor: pointer;
+            padding: 12px;
+            color: #fff;
+            font-weight: bold;
+            background-color: crimson;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: none;
+            position: absolute;
+        }
+        tr{
+            position: relative;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button class="btn" onClick="clickfun()"
+        style=" cursor: pointer;padding: 12px; color: #fff; font-weight: bold; background-color: cadetblue; margin: 10px auto; border-radius: 5px; border: none;">
+        Get Details
+    </button>
+    <button id="del"
+            Deleterow()
+        style=" cursor: pointer;padding: 12px; color: #fff; font-weight: bold; background-color: crimson; margin: 10px auto; border-radius: 5px; border: none;" onclick="Deleterow()">Delete rows</button>
+
+
+    <table></table>
+
+    <script>
+        var details = [
+            {
+                name: "vijay",
+                roll: "22P31A04J0",
+                college: "ACET"
+            },
+            {
+                name: "sameer",
+                roll: "22MH1A05E1",
+                college: "ACOE"
+            },
+            {
+                name: "suresh",
+                roll: "22MH1A0538",
+                college: "ACOE"
+            }
+
+        ];
+        var table = document.querySelector("table");
+        var fncount = 0
+        function clickfun() {
+            if (fncount == 0) {
+                var tableHTML = "<tr><th>name</th><th>rollnumber</th><th>college</th></tr>";
+
+                details.forEach((val) => {
+                    tableHTML += "<tr>";
+                    for (let objval in val) {
+                        tableHTML += <td><input type="text" value=${val[objval]} /></td>;
+                    }
+                    tableHTML += "</tr>";
+                });
+
+                table.innerHTML = tableHTML;
+                document.querySelector(".btn").innerHTML = "add more rows"
+                fncount++
+            }
+            else {
+
+                var newinnerText = ""
+                var n = window.prompt("enter name")
+                var r = window.prompt("enter roll")
+                var c = window.prompt("enter campus code")
+
+                var newobj = {
+                    name: ${n},
+                    roll: ${r},
+                    campus: ${c}
+                }
+                console.log(newobj)
+                newinnerText += "<tr>";
+                for (let objval in newobj) {
+                    newinnerText += <td><input type="text" value= ${newobj[objval]} /></td>;
+                }
+                newinnerText += "</tr>";
+                table.innerHTML += newinnerText
+
+            }
+        }
+        function Deleterow() {
+            var tablerows = document.querySelectorAll("tr")
+            console.log(tablerows)
+            tablerows.forEach((r, index) => {
+                if (index != 0) {
+                    var delbtn = document.createElement("button")
+                    delbtn.innerHTML = "Delete"
+                    delbtn.setAttribute("class", "delbutton")
+                    r.appendChild(delbtn)
+                    delbtn.onclick= () => {
+                        r.remove()
+                    }
+                }
+
+            })
+        }
+    </script>
+</body>
+
+</html>

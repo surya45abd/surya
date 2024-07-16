@@ -1,0 +1,225 @@
+.header{
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    margin-top: 15px;
+    background-color:white;
+}
+.buttons{
+    width: 100%;
+    height: 35px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    padding: 10px;
+    border-color: azure;
+    border-radius: 5px;
+}
+.buttons button:nth-child(1){
+    background-color: green;
+}
+.buttons button:nth-child(2){
+    background-color: violet;
+}
+.buttons button:nth-child(3){
+    background-color: blue;
+}
+.buttons button:nth-child(4){
+    background-color: skyblue;
+}
+.buttons button:nth-child(5){
+   background-color: red;
+}
+.maindiv{
+    width: 100%;
+    height: 900px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+}
+.prodiv{
+    width: 300px;
+    height: 620px;
+    border: 1px solid whitesmoke;
+    background-color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subdiv{
+    width: 75%;
+    height: 900px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.details{
+    width: 95%;
+    height: 425px;
+    border: 1px solid white;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+.project{
+    width: 95%;
+    height: 425px;
+    border: 1px solid white;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+
+}
+.image{
+    width: 80px;
+    height: 80px;
+    border: 1px solid blue;
+    border-radius: 60px;
+    overflow: hidden;
+}
+.shirt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.shirt button:nth-child(1){
+    background-color: blue;
+    height: 30px;
+    border-color: aliceblue;
+    border-radius: 2px;
+}
+.shirt button:nth-child(2){
+    color: blue;
+    height: 30px;
+    border-color: aliceblue;
+    border-radius: 2px;
+}
+.can{
+    width: 300px;
+    height: 300px;
+    border-bottom: 3px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.website{
+    border-bottom: 3px solid whitesmoke;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.github{   
+     border-bottom: 3px solid whitesmoke;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.twitter{
+    border-bottom: 3px solid whitesmoke;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.instagram{
+    border-bottom: 3px solid whitesmoke;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.facebook{
+    border-bottom: 3px solid whitesmoke;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.web{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save{
+    position: relative;
+    left: 200px;
+}
+.save button:nth-child(1){
+    background-color: blue;
+    color: white;
+}
+.main1{
+    width: 800px;
+    height: 5px;
+    background-color: whitesmoke;
+}
+.sub1{
+    width: 650px;
+    height: 3px;
+    background-color: blue;
+}
+.main2{
+    width: 800px;
+    height: 5px;
+    background-color: whitesmoke;
+}
+.sub2{
+    width: 600px;
+    height: 3px;
+    background-color: rgb(220, 18, 18);
+}
+.main3{
+    width: 800px;
+    height: 5px;
+    background-color: whitesmoke;
+}
+.sub3{
+    width: 750px;
+    height: 3px;
+    background-color: rgb(14, 233, 76);
+}
+.main4{
+    width: 800px;
+    height: 5px;
+    background-color: whitesmoke;
+}
+.sub4{
+    width: 450px;
+    height: 3px;
+    background-color: rgb(189, 207, 55);
+}
+.main5{
+    width: 800px;
+    height: 5px;
+    background-color: whitesmoke;
+}
+.sub5{
+    width: 500px;
+    height: 3px;
+    background-color: rgb(22, 178, 226);
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+        .main{
+            width: 1000px;
+            display: flex;
+            display: flex;
+            /* justify-content: center; */
+            padding: 30px;
+            align-items: center;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .sub{
+            height: 150px;
+            width: 300px;
+            background-color: green;
+            margin: 10px;
+            border-radius: 20px;
+            /* box-shadow: 3px 3px 3px yellow; */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sss{
+            background:url("./wall.jpg");
+            background-size: cover;
+            overflow: hidden;
+        } .ooo{
+            background:url("./wall2.jpg");
+            background-size: cover;
+            overflow: hidden;
+        } .ppp{
+            background:url("./wall3.jpeg");
+            background-size: cover;
+            overflow: hidden;
+        } .qqq{
+            background:url("./wall4.jpeg");
+            background-size: cover;
+            overflow: hidden;
+        } .rrr{
+            background:url("./wall5.jpeg");
+            background-size: cover;
+            overflow: hidden;
+        } .ttt{
+            background:url("./wall6.jpeg");
+            background-size: cover;
+            overflow: hidden;
+        } .uuu{
+            background:url("./wall7.jpeg");
+            background-size: cover;
+            overflow: hidden;
+        } .vvv{
+            background:url("./wall8.jpeg");
+            background-size: cover;
+            overflow: hidden;
+        }
+        .www{
+            background:url("./wall9.jpeg");
+            background-size: cover;
+            overflow: hidden;
+        }
+        .xxx{
+            background:url("./wall10.jpeg");
+            background-size: cover;
+            overflow: hidden;
+        }
+        .yyy{
+            background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbaxXFUj4i2buBleLLu3M6sW4MUB-5scE_Ew&s");
+            background-size: cover;
+            overflow: hidden;
+        }
+        .zzz{
+            background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE68KLM38uy9yntuCRrMIXGOO6MecrEKJ6XQ&s");
+            background-size: cover;
+            overflow: hidden;
+        }
+        /* button{
+            width: 60px;
+            background-color: blue;
+            gap: 3px;
+        } */
+        .prevbutton{
+            width: 90px;
+            height: 40px;
+            border-radius: 50px;
+            background-color: blueviolet;
+
+        }
+        li button{
+            display: none;
+        }
+        .slick-dots{
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            left: 39%;
+            bottom: 0px;
+        }
+        .slick-active{
+            color:rgb(236, 13, 50)
+        }
+        li:hover{
+            transform: scale(2.1);
+            color: blue;
+        }
+        li{
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub sss"></div>
+        <div class="sub vvv"></div>
+        <div class="sub ttt"></div>
+        <div class="sub uuu"></div>
+        <div class="sub www"></div>
+        <div class="sub xxx"></div>
+        <div class="sub yyy"></div>
+        <div class="sub zzz"></div>
+        <div class="sub qqq"></div>
+        <div class="sub rrr"></div>
+        <div class="sub ooo"></div>
+        <div class="sub ppp"></div>
+    </div>
+    <script src="./slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
+    <script src="./slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./jq.js"></script>
+        <script>
+        $('.main').slick({
+            slidesToShow: 3,
+      slidesToScroll: 1,
+      dots:true,
+      centerMode:true,
+      infinite:false,
+      prevArrow:`<button class="prevbutton"><</button>`,
+      nextArrow:`<button class="prevbutton">></button>`,
+      responsive:[
+        {
+            breakpoint:750,
+            settings :{
+                slidesToShow:3,
+            }
+        },
+        {
+            breakpoint:450,
+            settings: {
+                slidesToShow:2,
+            }
+        }
+      ]
+          });
+          </script>
+</body>
+</html>

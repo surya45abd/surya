@@ -1,0 +1,250 @@
+.maindiv{
+    width: 800px;
+    height: 800px;
+    border: 3px solid black;
+}
+.subdiv1{
+    height: 450px;
+    border: 1px solid #15597C;
+    background:linear-gradient(to top right, #15597C,#7ECBC5)
+}
+.subdiv2{
+    height: 350px;
+    border: 1px solid black;
+    position: relative;
+    background-color: aqua;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.little{
+    width: 20px;
+    height: 25px;
+    background-color: azure;
+    border-radius: 5px;
+    box-shadow:  5px 5px;
+}
+.little2{
+    display: flex;
+    align-items: center;
+}
+.topic{
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    width: 550px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+p:nth-child(2){
+    color:aliceblue
+}
+p:nth-child(3){
+    color:aliceblue
+}
+p:nth-child(4){
+    color:aliceblue
+}
+p:nth-child(5){
+    color:aliceblue
+}
+p:nth-child(6){
+    color:aliceblue
+}
+.profile{
+    width: 100px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 40px;
+    height: 40px;
+    background-color: azure;
+    border-radius: 40px;
+}
+.discover{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.learn{
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: white;
+}
+.platform{
+    height: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.search{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.bar{
+    width:500px;
+    background-color: aliceblue;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.symbol{
+    width: 70px;
+    height: 70px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.code{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    color: black;
+}
+.vich{
+    width: 130px;
+    height: 70px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+.vich2{
+    width: 110px;
+    height: 50px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    border-radius: 50px;
+}
+.web{
+    width: 225px;
+    height: 350px;
+    border: 1px solid black;
+    position:relative;
+    top: -80px;
+    left: 100px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.web1{
+    height: 175px;
+    width: 215px;
+    margin-left: 10px;
+}
+.web2{
+    height: 175px;
+    width: 215px;
+    margin-left: 10px;
+}
+.strip{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: blue;
+    border-radius: 7px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.finance{
+    width: 375px;
+    height: 350px;
+    border: 1px solid black;
+    position: absolute;
+    left: 350px;
+    top: -80px;
+    background-image: url(https://www.exactsales.com.br/wp-content/uploads/elementor/thumbs/post_blog_analise_concorrencia-qfidqoit7t1rpu37yutsn5fyvppgtiggxw47fupfwk.webp);
+    background-size: cover;
+    border-radius: 20px;
+}
+.strip2{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: blue;
+    border-radius: 7px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    color: aliceblue;
+}
+span{
+    color: aliceblue;
+}
+.span1{
+    width: 320px;
+    height: 130px;
+    margin-left: 20px;
+}
+.span2{
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.icons{
+    width: 350px;
+    height: 150px;
+    margin-left: 20px;
+    position: relative;
+}
+.icons2{
+    width: 300px;
+    height: 40px;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.icons3{
+    color: azure;
+    display: flex;
+    align-items: center;
+}

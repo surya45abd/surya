@@ -1,0 +1,43 @@
+.maindiv{
+    width: 270px;
+    height: 85px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-image: url("./event.jpg");
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    margin-left: 10px;
+}
+.mem{
+    color: yellow;
+    text-align: center;
+}
+.owl{
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+}
+.eve{
+    text-align: center;
+    color: azure;
+}
+.main2{
+        width: 270px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-image: url("./event.jpg");
+        background-size: cover;
+        position: relative; 
+        margin-top: 10px;
+}
+.name{
+    color: yellow;
+}
+.owl2{
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+}

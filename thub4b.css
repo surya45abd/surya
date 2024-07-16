@@ -1,0 +1,83 @@
+.box1{
+    border-width:5px;
+    border-style:solid;
+    border-color: black;
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+.circle{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 70%;
+    height: 70%;
+    margin: 75px;
+    border-radius:260px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40%;
+    
+    
+}
+.square1{
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    width:50%;
+    height: 50%;
+    background-color: azure;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.square2{
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    width:50%;
+    height: 50%;
+    background-color: azure;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.rectangle{
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    width:35%;
+    height: 15%;
+    background-color: azure;
+    
+}
+.eye1,.eye2{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 50%;
+    height: 50%;
+    margin: 25% ;
+    background-color: black;
+    border-radius: 80px;
+}
+.another{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 100px;
+    height: 100px;  
+}
+.flex{
+    display: flex;
+}

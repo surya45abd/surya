@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to left,red,blue,green);
+}
+.main{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: purple;
+    border: 2px  groove black;
+    background-color: pink;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 120px;
+    height: 50px;
+}
+
+table{
+    border-collapse:collapse ;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+}
+th{
+    border: 2px solid black;
+    color: green;
+    background-color: yellow;
+    padding: 6px 20px ;
+}
+td{
+    border: 2px solid black;
+    color: rgb(53, 3, 253);
+    background-color: snow;
+    padding: 6px 20px ;
+}
+
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding: 6px 20px ;
+    border: none;
+    color: red;
+    background-color: snow;
+}

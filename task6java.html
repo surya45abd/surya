@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n x n Grid</title>
+    <style>
+        #grid {
+            display: grid;
+        }
+        .cell {
+            background-color: #fff;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid"></div>
+    <script>
+        function createGrid(n) {
+            const grid = document.getElementById('grid');
+            grid.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
+            grid.style.gridTemplateRows = `repeat(${n}, 1fr)`;
+            grid.innerHTML = '';  // Clear any existing grid
+
+            for (let i = 0; i < n * n; i++) {
+                const cell = document.createElement('div');
+                cell.className = 'cell';
+                cell.textContent = i + 1;
+                grid.appendChild(cell);
+            }
+        }
+
+        const n = parseInt(prompt("Enter the value of n for an n x n grid: "), 10);
+        if (!isNaN(n) && n > 0) {
+            createGrid(n);
+        } else {
+            alert('Invalid input. Please enter a positive integer.');
+        }
+    </script>
+</body>
+</html>

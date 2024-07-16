@@ -1,0 +1,114 @@
+.moon{
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    position: relative;
+    left: 300px;
+    top: 300px;
+    border-radius: 50%;
+    animation-name: animi;
+    animation-duration: 10s;
+    animation-iteration-count: 10;
+}
+.dot{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    animation-name: animi2;
+    animation-duration: 10s;
+    animation-iteration-count: 10;
+    position: relative;
+    top: 300px;
+    left: 600px;
+    background-color: aquamarine;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes animi{
+    0%{
+        left: 300px;
+        top: 300px;
+       
+    }
+    8%{
+        left:350px;
+        top: 450px;
+    }
+    16%{
+        left:450px;
+        top:550px
+    }
+    25%{
+        left: 600px;
+        top: 600px;
+    }
+    33%{
+        left: 750px;
+        top: 550px;
+    }
+    42%{
+        left: 850px;
+        top: 450px;
+    }
+    50%{
+        left: 900px;
+        top: 300px;
+    }
+    58%{
+        left: 850px;
+        top: 150px;
+    }
+    67%{
+        left: 750px;
+        top: 50px;
+    }
+    75%{
+        left: 600px;
+        top: 0px;
+    }
+    83%{
+        left: 550px;
+        top: 50px;
+    }
+    91%{
+        left: 450px;
+        top: 150px;
+    }
+    100%{
+        left: 300px;
+        top: 300px;
+    }
+}
+@keyframes animi2{
+    0%{
+        
+        background: linear-gradient(to left,blue,red);
+        transform: scale(100%);
+     
+    }
+    25%{
+        background:linear-gradient(to left,green,yellow);
+        transform: scale(200%);
+      
+    }
+    50%{
+        background:linear-gradient(to left,orange 45%,pink 60%);
+        transform: rotateZ(180deg);
+        transform: scale(100%);
+        
+    }
+    75%{
+        background:linear-gradient(to left,violet,gold);
+       transform: rotateZ(270deg);
+       transform: scale(200%);
+    }
+    100%{
+        background: linear-gradient(to left,blue,red);
+        transform: rotateZ(360deg);
+        transform: scale(100%);
+        
+    }
+}

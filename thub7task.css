@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.maindiv{
+    width:570px;
+    height: 350px;
+    border: 1px solid black;
+    background-image: url("./sbi.jpg");
+    background-size: cover;
+    position: relative;
+    box-shadow: 10px 10px 10px;
+    border-radius: 10px;
+}
+.sbilogo{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.chip{
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    justify-content: space-between;
+    color: aliceblue;
+    padding: 5px 20px;
+}
+.chip2{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.number{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+.valid{
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: aliceblue;
+    gap:29px;
+}
+.date{
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 47px;
+}
+.check{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.name{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: azure;
+    padding-left: 30px;
+}
+.image{
+    position: absolute;
+    bottom: 0px;
+    right: -20px;    
+}

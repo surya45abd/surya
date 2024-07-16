@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vsh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .clock{
+            width: 30vmax;
+            height: 30vmax;
+            border: 1px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+       
+        .strip1{
+            height: 70px;
+            border: 2px solid black;
+            position: absolute;
+            bottom: 50%; 
+            transform-origin: bottom;
+            animation: strip1 60s linear infinite;
+        }
+        @keyframes strip1{
+            from{
+                transform: rotate(0deg) ;
+                border-color: aquamarine;
+            }
+            to{
+                transform: rotate(360deg) ;
+                border-color: aquamarine;
+            }
+        }
+        .strip2{
+            height: 50px;
+            border: 2px solid black;
+            position: absolute;
+            bottom: 50%;
+            transform-origin: bottom;
+            animation-name: strip2;
+            animation-duration: 3600s;
+            animation-iteration-count: 3;  
+        }
+        @keyframes strip2{
+            from{
+                transform: rotate(0deg);
+                border-color: blue;
+            }
+            to{
+                transform: rotate(360deg);
+                border-color: blue;
+            }
+        }
+       
+        .strip3{
+            height: 30px;
+            border: 2px solid black;
+            position: absolute;
+            bottom: 50%;
+            transform-origin: bottom;
+            animation-name: strip3;
+            animation-duration: 84000s;
+            animation-iteration-count: 3;
+        }
+        @keyframes strip3{
+            from{
+                transform: rotate(0deg);
+                border-color: chartreuse;
+            }
+            to{
+                transform: rotate(360deg);
+                border-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="dot"></div>
+        <div class="strip1"></div>
+        <div class="strip2"></div>
+        <div class="strip3"></div>
+    </div>
+</body>
+</html>

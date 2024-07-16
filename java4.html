@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv{
+            height: 200px;
+            width: 300px;
+            border: 1px solid pink;
+            background-color: pink;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv">
+
+        <img src="./adidas.jpg" alt="">
+        <button onclick="imagechange()">change image</button>
+    </div>
+
+
+
+
+    <script>
+
+
+
+            var  mydiv = document.querySelector(".mydiv");
+            mydiv.innerHTML +="html book <h1>hello</h1>";
+            mydiv.style.backgroundColor="red";
+            console.log(mydiv);
+            
+            var myimage=document.querySelector("img");
+            myimage.style.height="60px";
+            
+            function imagechange(){
+                var image=document.querySelector("img");
+                image.src="./puma.jpg";
+            }
+    </script>
+</body>
+</html>

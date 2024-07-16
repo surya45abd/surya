@@ -1,0 +1,225 @@
+.maindiv{
+    width: 400px;
+    height: 1100px;
+    border: 1px solid black;
+    margin-left: 500px;
+}
+.header{
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.stip{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
+.stip1{
+    width: 30px;
+    height: 5px;
+    background-color:black;
+    border-radius: 2px;
+}
+.stip2{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    border-radius: 2px;
+}
+.stip3{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    border-radius: 2px;
+}
+.image{
+    width: 400px;
+    height: 250px;
+    background-image: url("file:///C:/Users/SURESH/AppData/Local/Microsoft/Windows/INetCache/IE/2NXC2GMS/IMG-20240624-WA0018[1].jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: columnx;
+    flex-wrap: wrap;
+}
+.mob{
+    width: 200px;
+    height: 250px;
+    color: azure;
+    align-items: end;
+    text-align: end;
+}
+.test{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.box{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.box1{
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2{
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box3{
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box4{
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create{
+    height: 210px;
+    border: 1px solid white;
+    background-color: whitesmoke;
+}
+.we{
+    height: 45px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.para{
+    height: 30px;
+    border: 1px solid whitesmoke;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.ticks{
+    height: 125px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.tick1{
+    width: 170px;
+    height: 45px;
+    border: 1px solid white;
+    background-color: azure;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    font-size: x-small;
+}
+.tick2{
+    width: 170px;
+    height: 45px;
+    border: 1px solid white;
+    background-color: azure;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    font-size: x-small;   
+}
+.tick3{
+    width: 170px;
+    height: 45px;
+    border: 1px solid white;
+    background-color: azure;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    font-size: x-small;
+}
+.tick4{
+    width: 170px;
+    height: 45px;
+    border: 1px solid white;
+    background-color: azure;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    font-size: x-small;
+}
+.ticka{
+    width: 40px;
+    height: 40px;
+    display: flex ;
+    justify-content: center ;
+}
+.in{
+    height: 250px;
+    border: 1px solid black;
+    position: relative;
+}
+.blue{
+    width: 260px;
+    height: 185px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border-radius: 8px;
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.men{
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    border-radius: 8px;
+    background-image: url(./owl.jpg);
+    background-size: cover;
+}
+.out{
+    height: 250px;
+    border: 1px solid black;
+}
+h1{
+    font-size: 2vmax;
+
+}

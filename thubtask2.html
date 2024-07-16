@@ -1,0 +1,758 @@
+<html>
+    <head>
+        <title>
+            magic
+        </title>
+        <style>
+            .box{
+                width: 1000px;
+                height: 600px;
+                border: 3px solid black;
+                position: relative;
+                background-color: black;
+            }
+            .boxa{
+                width: 1000px;
+                height: 150px;
+                border: 1px solid;
+                position: relative;
+            }
+            .boxb{
+                width: 1000px;
+                height: 450px;
+                border: 1px solid;
+                position: relative;
+            }
+            .housewalls{
+                width: 350px;
+                height: 250px;
+                border: 3px solid ;
+                position: absolute;
+                bottom: 0px;
+                left: 50px;
+                background-color: yellowgreen;
+            }
+            .door{
+                width: 90px;
+                height: 200px;
+                border: 3px solid white;
+                background-color: blanchedalmond;
+                position: absolute;
+                bottom: 0px;
+                left: 50px;
+            }
+            .window{
+                width: 90px;
+                height: 90px;
+                border: 3px solid white; 
+                position: absolute;
+                top: 50px;
+                right: 35px;
+            }
+            .window1{
+                width: 45px;
+                height: 45px;
+                border: 1px solid white; 
+            }
+            .window2{
+                width: 45px;
+                height: 45px;
+                border: 1px solid white; 
+            }
+            .window3{
+                width: 45px;
+                height: 45px;
+                border: 1px solid white;
+                position: absolute; 
+                top: 0px;
+                left: 45px;
+            }
+            .roof{
+                width: 450px;
+                height: 75px;
+                border: 1px solid white;
+                background-color: goldenrod;
+                position: absolute;
+                top: 125px;
+            }
+            .small{
+                width: 45px;
+                height: 75px;
+                border: 1px solid white;
+                background-color: gray;
+                position: absolute;
+                top: 50px; 
+                left:355px ;
+            }
+            .tree{
+                width: 35px;
+                height: 250px;
+                border: 1px solid white;
+                background-color:antiquewhite;
+                position: absolute;
+                bottom: 0px; 
+                left:800px;  
+            }
+            .leaf1{
+                width: 100px;
+                height: 100px;
+                border: 1px solid white;
+                background-color: rgb(102, 230, 102);
+                border-top-left-radius: 150px;
+                border-top-right-radius: 150px;
+                border-bottom-left-radius: 150px;
+                border-bottom-right-radius: 150px;
+                position: absolute;
+                bottom: 200px;
+                right: 80px;
+            }
+            .leaf2{
+                width: 100px;
+                height: 100px;
+                border: 1px solid white;
+                background-color: rgb(102, 230, 102);
+                border-top-left-radius: 150px;
+                border-top-right-radius: 150px;
+                border-bottom-left-radius: 150px;
+                border-bottom-right-radius: 150px;
+                position: absolute;
+                bottom: 200px;
+                right: 179px;
+            }
+            .leaf3{
+                width: 100px;
+                height: 100px;
+                border: 1px solid white;
+                background-color: rgb(102, 230, 102);
+                border-top-left-radius: 150px;
+                border-top-right-radius: 150px;
+                border-bottom-left-radius: 150px;
+                border-bottom-right-radius: 150px;
+                position: absolute;
+                bottom: 265px;
+                right: 130px;
+            }
+            .moon{
+                width: 100px;
+                height: 100px;
+                border: 1px solid white;
+                background-color: white;
+                border-radius: 150px;
+                box-shadow: 0px 0px 5px 5px whitesmoke;
+                position: absolute;
+                right: 300px;
+                top: 0px;
+            }
+            .star1{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 10px;
+            }
+            .star2{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 70px;
+            }
+            .star3{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 130px;
+            }
+            .star4{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 190px;
+            }
+            .star5{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 250px;
+            }
+            .star6{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 310px;
+            }
+            .star7{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 370px;
+            }
+            .star8{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 430px;
+            }
+            .star9{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 490px;
+            }
+            .star10{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 550px;
+            }
+            .star11{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 610px;
+            }.star12{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 670px;
+            }
+            .star13{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 730px;
+            }
+            .star14{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 790px;
+            }
+            .star15{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 850px;
+            }
+            .star16{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 910px;
+            }
+            .star17{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 970px;
+            }
+            .star18{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 30px;
+                top: 40px;
+            }
+            .star19{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left:90px;
+                top: 40px;
+            }
+            .star20{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 150px;
+                top: 40px;
+            }
+            .star21{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 210px;
+                top: 40px;
+            }
+            .star22{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 270px;
+                top: 40px;
+            }
+            .star23{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 330px;
+                top: 40px;
+            }
+            .star24{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 390px;
+                top: 40px;
+            }
+            .star25{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 450px;
+                top: 40px;
+            }
+            .star26{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 510px;
+                top: 40px;
+            }
+            .star27{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 570px;
+                top: 40px;
+            }
+            .star28{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 630px;
+                top: 40px;
+            }
+            .star29{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 690px;
+                top: 40px;
+            }
+            .star30{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 750px;
+                top: 40px;
+            }
+            .star31{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 810px;
+                top: 40px;
+            }.star32{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 870px;
+                top: 40px;
+            }
+            .star33{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 930px;
+                top: 40px;
+            }
+            .star34{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 50px;
+                top: 80px;
+            }
+            .star35{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 110px;
+                top: 80px;
+            }
+            .star36{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 170px;
+                top: 80px;
+            }
+            .star37{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 230px;
+                top: 80px;
+            }
+            .star38{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 290px;
+                top: 80px;
+            }
+            .star39{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left:350px;
+                top: 80px;
+            }
+            .star40{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 410px;
+                top: 80px;
+            }
+            .star41{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 470px;
+                top: 80px;
+            }
+            .star42{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 530px;
+                top: 80px;
+            }
+            .star43{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 590px;
+                top: 80px;
+            }
+            .star44{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 650px;
+                top: 80px;
+            }
+            .star45{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 710px;
+                top: 80px;
+            }
+            .star46{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 770px;
+                top: 80px;
+            }
+            .star47{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 830px;
+                top: 80px;
+            }
+            .star48{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left: 890px;
+                top: 80px;
+            }
+            .star49{
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                background-color: black;
+                position: absolute;
+                left:950px;
+                top: 80px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="box">
+             <div class="boxa">
+                  <div class="star1">
+                     <img src="./star2.jpg" width="20px" height="20px" >
+                  </div>
+                  <div class="star2">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star3">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div> 
+                 <div class="star4">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star5">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star6">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star7">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star8">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star9">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star10">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star11">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star12">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star13">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star14">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div> 
+                <div class="star15">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star16">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star18">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star19">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star20">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star21">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star22">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star23">
+                    <img src="./star2.jpg" width="20px" height="20px" >
+                 </div>
+                 <div class="star24">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star25">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div> 
+                <div class="star26">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star27">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star28">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star29">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star30">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star31">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star32">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star33">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star34">
+                   <img src="./star2.jpg" width="20px" height="20px" >
+                </div>
+                <div class="star35">
+                  <img src="./star2.jpg" width="20px" height="20px" >
+               </div>
+               <div class="star36">
+                  <img src="./star2.jpg" width="20px" height="20px" >
+               </div> 
+               <div class="star37">
+                  <img src="./star2.jpg" width="20px" height="20px" >
+               </div>
+               <div class="star38">
+                  <img src="./star2.jpg" width="20px" height="20px" >
+               </div>
+               <div class="star39">
+                  <img src="./star2.jpg" width="20px" height="20px" >
+               </div>
+               <div class="star40">
+                  <img src="./star2.jpg" width="20px" height="20px" >
+               </div>
+               <div class="star41">
+                <img src="./star2.jpg" width="20px" height="20px" >
+             </div>
+             <div class="star42">
+                <img src="./star2.jpg" width="20px" height="20px" >
+             </div>
+             <div class="star43">
+                <img src="./star2.jpg" width="20px" height="20px" >
+             </div>
+             <div class="star44">
+                <img src="./star2.jpg" width="20px" height="20px" >
+             </div>
+             <div class="star45">
+               <img src="./star2.jpg" width="20px" height="20px" >
+            </div>
+            <div class="star46">
+               <img src="./star2.jpg" width="20px" height="20px" >
+            </div> 
+            <div class="star47">
+               <img src="./star2.jpg" width="20px" height="20px" >
+            </div>
+            <div class="star48">
+               <img src="./star2.jpg" width="20px" height="20px" >
+            </div>
+            <div class="star49">
+               <img src="./star2.jpg" width="20px" height="20px" >
+            </div>
+            </div>
+             
+             <div class="boxb">
+                <div class="housewalls">
+                     <div class="door">
+
+                     </div>
+                     <div class="window">
+                          <div class="window1">
+                          </div>
+                          <div class="window2">
+                          </div>
+                          <div class="window3">
+                          </div>
+                     </div>
+                </div>
+                <div class="roof">
+
+                </div>
+                <div class="small">
+
+                </div>
+                <div class="tree">
+
+                </div>
+                <div class="leaf1">
+
+                </div>
+                <div class="leaf2">
+
+                </div>
+                <div class="leaf3">
+
+                </div>
+                <div class="moon">
+
+                </div>
+             </div>
+        </div>
+    </body>
+</html>
